@@ -1,4 +1,5 @@
 #include <iostream>
+#include <windows.h>
 #include "sql_databases/db_with_relocation/EuropeDb.h"
 
 int main() {
