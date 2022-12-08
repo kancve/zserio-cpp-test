@@ -109,9 +109,9 @@ const char* convertIntToString(char buffer[24], T value)
  */
 inline const char* convertFloatToString(char buffer[48], float value)
 {
-    if (value >= static_cast<float>(std::numeric_limits<int64_t>::max()))
+    if (value >= static_cast<float>((std::numeric_limits<int64_t>::max)()))
         return "+Inf";
-    if (value <= static_cast<float>(std::numeric_limits<int64_t>::min()))
+    if (value <= static_cast<float>((std::numeric_limits<int64_t>::min)()))
         return "-Inf";
 
     const int64_t integerPart = static_cast<int64_t>(value);
